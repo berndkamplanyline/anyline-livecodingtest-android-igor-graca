@@ -6,6 +6,7 @@ plugins {
 ext {
     anylinesdk_version = "39.0.0"
     timber_version = "5.0.1"
+    leakcanary_version = "2.9.1"
 }
 
 android {
@@ -46,6 +47,10 @@ dependencies {
     implementation "io.anyline:anylinesdk:$anylinesdk_version"
 
     implementation "com.jakewharton.timber:timber:$timber_version"
+
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
