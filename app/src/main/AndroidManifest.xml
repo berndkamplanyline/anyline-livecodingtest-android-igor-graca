@@ -17,8 +17,13 @@
         android:theme="@style/Theme.AnylineLivecoding"
         tools:targetApi="31">
         <activity
+            android:name=".ScanActivity"
+            android:exported="false"
+            android:label="ScanActivity"/>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

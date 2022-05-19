@@ -17,6 +17,7 @@ class MainActivity : CameraPermissionActivity() {
                 Timber.d("--- Camera permission has been granted!")
 
                 /* TODO implement whatever we want to do with granted Camera Permission*/
+                startActivity(ScanActivity.buildIntent(this))
 
             }
         }
