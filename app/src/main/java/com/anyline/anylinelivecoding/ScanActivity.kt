@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.anyline.anylinelivecoding.databinding.ActivityScanBinding
+import io.anyline.AnylineSDK
 
 private lateinit var binding: ActivityScanBinding
 
@@ -16,6 +17,8 @@ class ScanActivity : AppCompatActivity() {
         setContentView(view)
 
         // TODO: continue here with setting up the examples stuff.
+
+        AnylineSDK.init(getString(R.string.anyline_license_key), this)
     }
 
     companion object {
