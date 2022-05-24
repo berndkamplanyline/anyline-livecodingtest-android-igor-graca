@@ -7,9 +7,8 @@ import android.os.Bundle
 import com.anyline.anylinelivecoding.databinding.ActivityScanBinding
 import io.anyline.AnylineSDK
 
-private lateinit var binding: ActivityScanBinding
-
 class ScanActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityScanBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityScanBinding.inflate(layoutInflater)
