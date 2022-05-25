@@ -29,7 +29,6 @@ class ScanActivity : AppCompatActivity() {
          * - Getting a result: Use (both works) ScanViewPlugin or ScanPlugin and attach (both works
          *   again) a ScannedBarcodesListener or a ScanResultListener. Extract the required value
          *   from the returned result and display it to the user.
-         * - Wrap initializing the Anyline SDK into try/catch!
          */
 
         AnylineSDK.init(getString(R.string.anyline_license_key), this)
