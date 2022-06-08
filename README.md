@@ -2,6 +2,10 @@
 
 Anyline Livecoding is a barebones scaffolded Android App to use as a starting point to integrate the Anyline SDK.
 
+## Before the Interview
+
+If you're given this task ahead of the Interview, please check out the repo and make sure that you can successfully build and run the app contained within. You are not required to implement the task ahead of the interview. If you decide to do so ahead of the Interview, we will review the code you implemented together. Otherwise we will implement the task during the Interview.
+
 ## Usage
 
 Check out the repo and open with Android Studio.
