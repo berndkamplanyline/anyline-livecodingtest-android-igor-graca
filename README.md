@@ -20,14 +20,14 @@ Scan a Barcode and display the scanned value of the Barcode to the User. Feel fr
 
 ## Hints
 
-- Use the documentation: https://documentation.anyline.com/toc/platforms/android/getting_started.html
+- Use the newest available version of Anyline (At the time of writing: 43.1.0)
+- Use the documentation: https://documentation-preview.anyline.com/
 - Use the Anyline Examples App: https://github.com/Anyline/anyline-ocr-examples-android/blob/master/AnylineSDK-Examples/AnylineSDK-Examples-Source/app/src/main/java/io/anyline/examples/barcode/ScanBarcodeActivity.kt
-- Ignore anything License-related (this part is solved!)
+- Insert the Anyline License into `anyline_license_key` within app/res/values/strings.xml. You can either [request](https://anyline.com/request/sdk) one or your Interviewers will provide one.
 - Ignore requesting Permissions (already implemented in CameraPermissionActivity.kt)
 - For easier Logging, Timber can be used: Timber.d("This is Log Output")
 - To access views, ViewBinding can be used: binding.[Widget]
 - View Configuration is available in assets/barcode_view_config.json
-- Getting a result: Use (both works) ScanViewPlugin or ScanPlugin and attach (both works again) a ScannedBarcodesListener or a ScanResultListener. Extract the required value from the returned result and display it to the user.
 - Talk to your interviewers! They can't read your mind. Tell them your thoughts and let them know if you're stuck. Asking the right questions is considered part of the exercise.
 
 ## License
