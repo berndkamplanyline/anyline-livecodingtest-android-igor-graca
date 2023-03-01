@@ -1,33 +1,46 @@
 {
-  "camera":{
-    "captureResolution":"1080",
-    "zoomGesture": true
+  "cameraConfig": {
+    "captureResolution": "1080p"
   },
-  "previewAlignment":"top",
-  "flash": {
-    "mode": "manual",
-    "alignment": "bottom_right",
-    "imageOn": "flash_on",
-    "imageOff": "flash_off"
+  "flashConfig": {
+    "mode": "auto",
+    "alignment": "bottom_right"
   },
-  "viewPlugin" : {
+  "viewPluginConfig": {
+    "pluginConfig": {
+      "id": "Barcode|Barcodes",
+      "barcodeConfig": {
+        "barcodeFormats": [
+          "ALL"
+        ],
+        "parseAAMVA": true
+      },
+      "cancelOnResult": false
+    },
     "cutoutConfig": {
       "style": "rect",
+      "maxWidthPercent": "80%",
+      "maxHeightPercent": "80%",
       "alignment": "center",
-      "strokeWidth": 2,
-      "strokeColor": "00FFFFFF",
-      "outerColor": "FFFFFF",
-      "outerAlpha": 0,
-      "feedbackStrokeColor": "00FF33FF"
+      "ratioFromSize": {
+        "width": 100,
+        "height": 80
+      },
+      "strokeWidth": 1,
+      "cornerRadius": 3,
+      "strokeColor": "FFFFFF",
+      "outerColor": "000000",
+      "outerAlpha": 0.3,
+      "feedbackStrokeColor": "0099FF"
     },
-    "cancelOnResult": false,
-    "scanFeedback": {
+    "scanFeedbackConfig": {
       "style": "rect",
       "strokeColor": "0099FF",
-      "fillColor" : "220099FF",
+      "fillColor": "220099FF",
+      "animationDuration": 150,
+      "blinkAnimationOnResult": true,
       "beepOnResult": true,
-      "vibrateOnResult": false,
-      "strokeWidth": 2
+      "vibrateOnResult": true
     }
   }
 }
