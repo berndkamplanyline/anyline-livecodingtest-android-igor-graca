@@ -5,7 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.anyline.anylinelivecoding.databinding.ActivityScanBinding
-import io.anyline.AnylineSDK
+import io.anyline2.AnylineSdk
 
 class ScanActivity : AppCompatActivity() {
     private lateinit var binding: ActivityScanBinding
@@ -31,7 +31,7 @@ class ScanActivity : AppCompatActivity() {
          *   from the returned result and display it to the user.
          */
 
-        AnylineSDK.init(getString(R.string.anyline_license_key), this)
+        AnylineSdk.init(getString(R.string.anyline_license_key), this)
     }
 
     companion object {
